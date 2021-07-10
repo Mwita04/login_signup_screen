@@ -8,7 +8,7 @@ import 'package:login_signup_screen/signup.dart';
 
 void main() {
   runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
+    debugShowCheckedModeBanner: true,
     home: Homepage(),
   ));
 }
@@ -69,6 +69,7 @@ class Homepage extends StatelessWidget {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => LoginPage()));
                     },
+
                     //defining the shape
                     shape: RoundedRectangleBorder(
                         side: BorderSide(color: Colors.black),
@@ -76,21 +77,35 @@ class Homepage extends StatelessWidget {
                     child: Text(
                       "Login",
                       style:
-                          TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
+                          TextStyle(fontWeight: FontWeight.w600, fontSize: 18
+                      ),
                     ),
                   ),
 
                   // Creating a signup button
                   SizedBox(height: 20),
                   MaterialButton(
-                      minWidth: double.infinity,
-                      height: 60,
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => SignUpPage()));
-                      })
+                    minWidth: double.infinity,
+                    height: 60,
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SignUpPage()));
+                    },
+                    color: Color(0xff00095FF),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50)
+                    ),
+                    child: Text(
+                      "Sign Up",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600,
+                          fontSize: 18
+                      ),
+                    ),
+                  )
                 ],
               )
             ],
