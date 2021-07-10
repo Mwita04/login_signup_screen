@@ -1,5 +1,7 @@
 //import 'dart:js';
 
+// ignore_for_file: prefer_const_constructors, use_full_hex_values_for_flutter_colors, use_key_in_widget_constructors
+
 import 'dart:js';
 
 import 'package:flutter/material.dart';
@@ -77,8 +79,7 @@ class Homepage extends StatelessWidget {
                     child: Text(
                       "Login",
                       style:
-                          TextStyle(fontWeight: FontWeight.w600, fontSize: 18
-                      ),
+                          TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
                     ),
                   ),
 
@@ -95,15 +96,13 @@ class Homepage extends StatelessWidget {
                     },
                     color: Color(0xff00095FF),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50)
-                    ),
+                        borderRadius: BorderRadius.circular(50)),
                     child: Text(
                       "Sign Up",
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w600,
-                          fontSize: 18
-                      ),
+                          fontSize: 18),
                     ),
                   )
                 ],
