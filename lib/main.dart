@@ -1,8 +1,4 @@
-//import 'dart:js';
-
-// ignore_for_file: prefer_const_constructors, use_full_hex_values_for_flutter_colors, use_key_in_widget_constructors
-
-import 'dart:js';
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
 import 'package:login_signup_screen/login.dart';
@@ -52,14 +48,14 @@ class Homepage extends StatelessWidget {
                       color: Colors.grey[700],
                       fontSize: 15,
                     ),
-                  )
+                  ),
                 ],
               ),
               Container(
                 height: MediaQuery.of(context).size.height / 3,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/welcome.png"))),
+                        image: AssetImage('assets/images/welcome.png'))),
               ),
               Column(
                 children: <Widget>[
@@ -94,7 +90,8 @@ class Homepage extends StatelessWidget {
                           MaterialPageRoute(
                               builder: (context) => SignUpPage()));
                     },
-                    color: Color(0xff00095FF),
+                    // ignore: use_full_hex_values_for_flutter_colors
+                    color: Color(0xff00095ff),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50)),
                     child: Text(
