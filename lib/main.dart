@@ -1,12 +1,12 @@
 // ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
-
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:login_signup_screen/login.dart';
 import 'package:login_signup_screen/signup.dart';
 
 void main() {
   runApp(MaterialApp(
-    debugShowCheckedModeBanner: true,
+    debugShowCheckedModeBanner: false,
     home: Homepage(),
   ));
 }
