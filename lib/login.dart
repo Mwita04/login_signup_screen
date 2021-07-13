@@ -21,14 +21,15 @@ class LoginPage extends StatelessWidget {
           color: Colors.black,
         ),
       ),
+
+
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Expanded(
-              child: Column(
+            Expanded(child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Text(
@@ -61,6 +62,9 @@ class LoginPage extends StatelessWidget {
                   right: BorderSide(color: Colors.black),
                   
                   )
+
+
+                  
               ),
             child: MaterialButton(
               minWidth: double.infinity,
@@ -93,3 +97,5 @@ class LoginPage extends StatelessWidget {
       );
 }
 }
+
+/// Resume from 14:49
